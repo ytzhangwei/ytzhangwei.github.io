@@ -1,0 +1,390 @@
+@charset "utf-8";
+/* 全局 */
+body, div, p, ul, li, dl, dt, dd, form, input, table, img, h1, h2, h3, h4, h5, h6, header, section, footer, nav, figure, figcaption, article, menu {
+    margin: 0;
+    padding: 0
+}
+header, section, footer, nav, figure, figcaption, article, menu {
+    display: block;
+}
+body {
+    font: 12px "Helvetica", "Microsoft YaHei";
+    background: #f7f7f7;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body, a {
+    color: #333;
+}
+a, a:hover {
+    text-decoration: none;
+}
+em, i, cite {
+    font-style: normal;
+}
+img {
+    border: none;
+}
+ul, menu {
+    list-style-type: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.hide{display:none;}
+.hidden{visibility: hidden;}
+input {
+    -webkit-appearance: none;
+    outline: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+select{
+    font-family: "Microsoft YaHei","微软雅黑"；
+}
+
+
+.header {
+    font-weight: normal;
+    max-width: 768px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.6em;
+    color: #2f2f2f;
+    font-family: 'wf_segoe-ui_light','Segoe UI Light','Segoe WP Light','Segoe UI',Helvetica,Tahoma,Arial,sans-serif;
+    font-weight: 300;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+.backto{
+    display: none;
+}
+.h_content{
+    font-weight: normal;
+    max-width: 768px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-sub{
+    text-align: center;
+}
+.help-box h2 {
+    font-family: 'wf_segoe-ui_light','Segoe UI Light','Segoe WP Light','Segoe UI',Helvetica,Tahoma,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.33;
+    color: #2f2f2f;
+    margin-top: 48px;
+    margin-bottom: 20px;
+}
+.help_list {
+    font-size: 1.6em;
+    margin: 30px 0 30px 0;
+    padding-left: 12px;
+    padding-bottom: 0;
+    display: block;
+    list-style:url('../images/dian.png');
+
+}
+.help_list li {
+    margin-top: 18px;
+    margin-left: 0;
+    padding-left: 6px;
+    display: list-item;
+    font-size: 1em;
+}
+.help_list li p {
+    font-size: 1em;
+}
+
+.help_list p {
+    color: #2f2f2f;
+    font-size: 1.6em;
+    line-height: 1.5;
+    padding: 0;
+    font-family: 'Segoe UI','Segoe UI Web','Segoe UI Symbol','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+}
+.help_list a, .help_list a:visited, .help_list a:focus {
+    color: #0078d7;
+    text-decoration: none;
+}
+.mg-15-5{
+    font-weight: normal;
+    max-width: 768px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.help_text h2 {
+    font-family: 'wf_segoe-ui_light','Segoe UI Light','Segoe WP Light','Segoe UI',Helvetica,Tahoma,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.33;
+    color: #2f2f2f;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.help_text p {
+    color: #2f2f2f;
+    font-size: 1.6em;
+    line-height: 1.7;
+    color: #333333;
+    padding: 6px 0;
+    font-family: 'Segoe UI','Segoe UI Web','Segoe UI Symbol','Helvetica Neue','BBAlpha Sans','S60 Sans',Arial,sans-serif;
+}
+.help_text em a{
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+}
+.help_text p span{
+    font-size: 1.3em;
+}
+
+.help_text .fbold a{
+    font-weight: bold;
+    color: #f06;
+}
+.breadcrumb {
+    font-size: 14px;
+    line-height: 14px;
+    color: #646668;
+    text-align: left;
+    clear: both;
+    margin-bottom: 16px;
+    _margin-bottom: 11px;
+}
+.breadcrumb a, .breadcrumb a:hover {
+    color: #646668;
+    text-decoration: none;
+}
+.help_text p strong{
+    font-size: 1em;
+    color: #333333;
+}
+.note {
+    text-align: center;
+    padding: 3px 0 5px 0;
+    _padding: 4px 0;
+}
+.fh{
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+.fh a{
+    display: block;
+    overflow: hidden;
+    width: 150px;
+    text-align: center;
+    height: 45px;
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 7px;
+    color: #333;
+    border: 1px solid #999;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:767px) {
+    .mod, .mod2 {
+        border-radius: 3px;
+        background: #efefef;
+    }
+    .help_list {
+        font-size: 14px;
+        text-indent: 20px;
+        background: #fff;
+        padding-left: 0;
+        margin: 0;
+        list-style: inherit;
+    }
+    .help_list li {
+        line-height: 22px;
+        padding: 3px 20px 3px 0;
+        border-bottom: 1px solid #d9dde2;
+        margin-top: 0;
+        display: block;
+    }
+    .nzimg{
+        width: 40px;
+        vertical-align: middle;
+    }
+    .help_list a, .help_list a:visited, .help_list a:focus {
+        color: #666;
+        text-decoration: none;
+    }
+    .help_list li:first-child
+    {
+        border-top: 1px solid #d9dde2;
+    }
+    .h_content .help_list a, .expense > div {
+        position: relative;
+    }
+    .help_list li a {
+        display: block;
+        color: #666;
+    }
+    .h_content .help_list a:after, .expense > div:before, .xpRules:after, .list-toggle h6.title:after {
+        content: "";
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+        position: absolute;
+        right: -10px;
+        top: 2px;
+        background: url(../images/arrow.png);
+        background-size: cover;
+    }
+    .h_content .help_list article {
+        margin-right: -10px;
+        display: none;
+    }
+    .h_content .help_list p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-indent: 2em;
+    }
+    .help_text {
+        line-height: 24px;
+        padding: 10px;
+        clear: both;
+        color: #666;
+        font-size: 14px;
+    }
+    .header {
+        font-size: 16px;
+        height: 4rem;
+        color: #6d6d72;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .backto {
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        color: #6d6d72;
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        margin-top: -10px;
+    }
+    .header .title-sub {
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .clear:after, #header:after, #footer:after, #wrap:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: ".";
+        clear: both;
+        height: 0;
+        overflow: hidden;
+    }
+    .h_content {
+        font-weight: normal;
+        max-width: 768px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .help-box h2 {
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
+        color: #6d6d72;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-weight: normal;
+    }
+    .help-box h2 span {
+        width: 0px;
+        height: 0px;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #0063a5;
+        font-size: 0px;
+        line-height: 0px;
+        margin-right: 12px;
+        display: inline-block;
+        vertical-align: -5px;
+    }
+    .help_text h2{
+        font-size: 16px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .help_text p span{
+        font-weight: 700;
+    }
+    .help_text p em{
+        color: #1ea0fa;
+        font-weight: 700;
+    }
+    .help_text img {
+        max-width: 100%;
+        height: auto;
+    }
+    .cp_jj{
+        text-align: center;
+        height: 40px;
+    }
+    .cp_jj img{
+        height: 1.3rem;
+        line-height: 2rem;
+    }
+    .mg-15-5 {
+        font-weight: normal;
+        max-width: 768px;
+        margin-top: 0;
+        margin-left: auto;
+        font-family:"Helvetica", "Microsoft YaHei";
+        margin-right: auto;
+
+    }
+    .help_text h2 {
+        font-size: 16px;
+        height: 40px;
+        text-align: center;
+        color: #666;
+        line-height: 40px;
+        margin-top: 0;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family:"Helvetica", "Microsoft YaHei";
+    }
+    .help_text p{
+        font-size: 14px;
+        font-family:"Helvetica", "Microsoft YaHei";
+    }
+    .help_text p span {
+        font-weight: 700;
+        color: #666;
+        font-size: 15px;
+    }
+    .breadcrumb {
+        font-size: 1.4em;
+        line-height: 1.4em;
+        color: #646668;
+        text-align: left;
+        clear: both;
+        margin: 0 2% 16px;
+    }
+    .breadcrumb{
+        display: none;
+    }
+}
